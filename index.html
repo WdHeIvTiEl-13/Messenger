@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popBox.css">
+</head>
+
+<body>
+  <div id="body" class="body">
+    <div class="top">
+      <img id="appLogo" src="logo/logo.png" alt="Logo">
+      <b><p id="appName">piChat</p></b>
+      <span id="threeDots" class="top_3dots"><ion-icon name="ellipsis-vertical"></ion-icon></span>
+      <div id="pop_Box" class="pop_box">
+        <ul>
+          <li>
+            <a href="#">
+              <span id="settings_btn" class="pop_text">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span id="about_btn" class="pop_text">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span id="help_btn" class="pop_text">Help</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      
+      
+    <div class="mid">
+      <div id="chatBox" class="box ChatBox">
+        Chat Box
+      </div>
+      <div id="friendsBox" class="box FriendsBox">
+        Friends list
+      </div>
+      <div id="publishBox" class="box PublishBox">
+        Publisher canvas
+      </div>
+      <div id="newsBox" class="box NewsBox">
+        News Feed
+      </div>
+      <div id="profileBox" class="box ProfileBox">
+        <div class="profile">
+          <div class="profile_pic">
+            
+          </div>
+          
+          <div class="profile_name"></div>
+          
+          <div class="profile_info"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="bottom">
+      <ul>
+        <li id="chat_btn" class="list">
+          <a href="#chat">
+          <span class="icon">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </span>
+          <span class="text">Chat</span>
+          </a>
+        </li>
+        <li id="friends_btn" class="list">
+          <a href="#friends">
+          <span class="icon">
+            <ion-icon name="people-outline"></ion-icon>
+          </span>
+          <span class="text">Friends</span>
+          </a>
+        </li>
+        <li id="publish_btn" class="list">
+          <a href="#publish">
+          <span class="icon">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </span>
+          <span class="text">Publish</span>
+          </a>
+        </li>
+        <li id="news_btn" class="list">
+          <a href="#news">
+          <span class="icon">
+            <ion-icon name="newspaper-outline"></ion-icon>
+          </span>
+          <span class="text">News</span>
+          </a>
+        </li>
+        <li id="profile_btn" class="list">
+          <a href="#profile">
+          <span class="icon">
+            <ion-icon name="person-outline"></ion-icon>
+          </span>
+          <span class="text">Profile</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <div id="settings" class="Settings">
+    <div class="top_settings">
+      <span id="settingsBack" class="back">
+        <ion-icon name="chevron-back"></ion-icon>
+      </span>
+      <h2>Settings</h2>
+    </div>
+    <div class="settingsContainer">This is settings</div>
+  </div>
+  
+  <div id="about" class="About">
+    <div class="top_about">
+      <span id="aboutBack" class="back">
+        <ion-icon name="chevron-back"></ion-icon>
+      </span>
+      <h2>About</h2>
+    </div>
+    <div class="aboutContainer">This is about</div>
+  </div>
+  
+  <div id="help" class="Help">
+    <div class="top_help">
+      <span id="helpBack" class="back">
+        <ion-icon name="chevron-back"></ion-icon>
+      </span>
+      <h2>Help</h2>
+    </div>
+    <div class="helpContainer">This is help</div>
+  </div>
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <script src="js/popBox.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

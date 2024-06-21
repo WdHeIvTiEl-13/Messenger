@@ -1,0 +1,66 @@
+.pop_box {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 5px;
+  border: 2px solid var(--blr);
+  color: var(--clr);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.pop_box.active {
+  display: block;
+  opacity: 1;
+}
+
+.pop_box ul {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
+.pop_box ul li {
+  list-style: none;
+  justify-content: left;
+  align-items: center;
+  padding: 8px;
+}
+
+.pop_box ul li:hover a{
+  background-color: var(--blr);
+  color: var(--clr);
+  border-radius: 4px;
+}
+
+.pop_box ul li a {
+  text-decoration: none;
+  color: var(--blr);
+  padding: 5px;
+}
+
+.Settings, .About, .Help {
+  display: none;
+  background-color: var(--clr);
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.top_settings, .top_about, .top_help {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--blr);
+}
+
+.top_settings, .top_about, .top_help h2 {
+  color: var(--blr);
+}
+
+.back {
+  color: var(--blr);
+  font-size: 24px;
+  padding: 18px;
+}
+
