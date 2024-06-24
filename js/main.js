@@ -59,12 +59,12 @@ profile_btn.addEventListener('click', profile_Box);
 
 
 
-const chat_btn = document.getElementById('btn');
+const chat_btn10 = document.getElementById('btn10');
 
-function chat_Box() {
+function chat_Box10() {
   const x = document.createElement("div");
   x.classList.add("add");
   document.body.append(x);
   x.innerHTML = "<input><button>Send</button>";
 }
-chat_btn.addEventListener('click', chat_Box);
+chat_btn10.addEventListener('click', chat_Box10);
