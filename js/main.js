@@ -56,3 +56,15 @@ function profile_Box() {
   profileBox.style.display = 'block';
 }
 profile_btn.addEventListener('click', profile_Box);
+
+
+
+const chat_btn = document.getElementById('btn');
+
+function chat_Box() {
+  const x = document.createElement("div");
+  x.classList.add("add");
+  document.body.append(x);
+  x.innerHTML = "<input><button>Send</button>";
+}
+chat_btn.addEventListener('click', chat_Box);
