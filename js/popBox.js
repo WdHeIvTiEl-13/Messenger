@@ -5,14 +5,17 @@ const body = document.getElementById('body');
 const settings = document.getElementById('settings');
 const about = document.getElementById('about');
 const help = document.getElementById('help');
+const community = document.getElementById('community');
 
 const settings_btn = document.getElementById('settings_btn');
 const about_btn = document.getElementById('about_btn');
 const help_btn = document.getElementById('help_btn');
+const community_btn = document.getElementById('community_btn');
 
 const settings_Back = document.getElementById('settingsBack');
 const about_Back = document.getElementById('aboutBack');
 const help_Back = document.getElementById('helpBack');
+const community_Back = document.getElementById('communityBack');
 
 
 function popBox() {
@@ -23,6 +26,7 @@ function popBox() {
   }
 }
 threeDots.addEventListener('click', popBox);
+
 
 function settingsEnter() {
   body.style.display = 'none';
@@ -62,3 +66,16 @@ function helpBack() {
   pop_Box.style.display = 'none';
 }
 help_Back.addEventListener('click', helpBack);
+
+function communityEnter() {
+  body.style.display = 'none';
+  community.style.display = 'block';
+}
+community_btn.addEventListener('click', communityEnter);
+
+function communityBack() {
+  community.style.display = 'none';
+  body.style.display = 'block';
+  pop_Box.style.display = 'none';
+}
+community_Back.addEventListener('click', communityBack);
