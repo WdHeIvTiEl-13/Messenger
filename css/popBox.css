@@ -5,6 +5,8 @@
   right: 5px;
   border: 2px solid var(--blr);
   color: var(--clr);
+  min-width: 100px;
+  margin: 0;
   border-radius: 8px;
   transition: 0.5s;
 }
@@ -14,22 +16,28 @@
 }
 
 .pop_box ul {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
-  margin: 0;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .pop_box ul li {
+  display: flex;
   list-style: none;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 0px;
 }
 
 .pop_box ul li:hover a{
   background-color: var(--blr);
   color: var(--clr);
+  width: 100%;
+  right: 5px;
   border-radius: 4px;
+  transition: 0.4s;
 }
 
 .pop_box ul li a {
@@ -38,7 +46,7 @@
   padding: 5px;
 }
 
-.Settings, .About, .Help {
+.Settings, .About, .Help, .Community {
   display: none;
   background-color: var(--clr);
   border-radius: 15px;
@@ -46,7 +54,7 @@
   width: 100%;
 }
 
-.top_settings, .top_about, .top_help {
+.top_settings, .top_about, .top_help, .top_community {
   height: 50px;
   width: 100%;
   display: flex;
@@ -54,7 +62,7 @@
   border-bottom: 1px solid var(--blr);
 }
 
-.top_settings, .top_about, .top_help h2 {
+.top_bar_pop h2 {
   color: var(--blr);
 }
 
@@ -64,3 +72,11 @@
   padding: 18px;
 }
 
+.back ion-icon:hover{
+  font-size: 26px;
+  padding-right: 1px;
+}
+
+.pop_text{
+  width: 100%;
+}
