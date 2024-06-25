@@ -129,6 +129,11 @@ body {
   color: var(--blr);
 }
 
+.top_3dots:hover{
+  border-radius: 50px;
+  background-color: rgb(121, 121, 121);
+}
+
 #appName {
   color: var(--blr);
   font-family: "Rubik Scribble", system-ui;
@@ -139,6 +144,7 @@ body {
   color: var(--blr);
   position: absolute;
   right: 20px;
+  padding: 6px;
 }
 
 .box {
