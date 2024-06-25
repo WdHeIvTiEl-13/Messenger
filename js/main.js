@@ -62,9 +62,8 @@ profile_btn.addEventListener('click', profile_Box);
 const chat_b =document.getElementById('bt');
 
 function chat() {
-  const x = document.createElement("div");
-  x.classList.add("add");
-  document.body.append(x);
-  x.innerHTML = "<input><button>Send</button>";
+  const Div = document.createElement("div");
+  document.body.append(Div);
+  x.innerText = "Sorry, this website is not complete yet.";
 }
 chat_b.addEventListener('click', chat);
